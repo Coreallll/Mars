@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MARS</title>
+  <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="/css/vendor.css">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body class="body">
+  <div class="back-stars"></div>
+<div class="back-smoke"></div>
+
+<header class="header">
+  <div class="container header__container">
+    <a href="" class="header__logo"><img src="/img/logo.svg" alt=""></a>
+    <nav class="header__nav">
+      <button class="btn-reset nav-close">
+        <span class="nav-close__line"></span>
+        <span class="nav-close__line"></span>
+      </button>
+      <ul class="list-reset header__nav-list">
+        <li class="header__nav-item">
+          <a href="" class="header__nav-link">О марсе</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="" class="header__nav-link">Процесс</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="" class="header__nav-link">Билеты</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="" class="header__nav-link">Новости</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="" class="header__nav-link">Контакты</a>
+        </li>
+        <li class="header__nav-item">
+          <button class="btn-reset btn-buy-tickets popup-btn">Купить билеты</button>
+        </li>
+      </ul>
+    </nav>
+    <button class="btn-reset burger">
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
+  </div>
+</header>
+
+  <main class="main">
+    <section class="hero">
+  <div class="container hero__container">
+    <div class="hero__content">
+      <span class="vector"></span>
+      <h2 class="hero__subtitle">Точка назначения:</h2>
+      <h1 class="hero__title main-title">Марс</h1>
+      <h1 class="hero__title ie-title">Марс</h1>
+    </div>
+  </div>
+</section>
+<div id="popup" class="popup">
+  <div class="container">
+    <div class="popup__body">
+      <div class="popup__content">
+        <button class="btn-reset popup__close">
+          <span class="popup__close-line"></span>
+          <span class="popup__close-line"></span>
+        </button>
+        <h2 class="popup__title">Бронирование билетов</h2>
+        <form action="" class="popup__form form">
+          <div class="popup__form-field">
+            <span class="popup__form-input-title">Дата заезда</span>
+            <input id="dateIn" type="text" class="input-reset popup__form-input" placeholder="дд.мм.гггг">
+          </div>
+          <div class="popup__form-field">
+            <span class="popup__form-input-title">Дата выезда</span>
+            <input id="dateOut" type="text" class="input-reset popup__form-input" placeholder="дд.мм.гггг">
+          </div>
+          <div class="popup__form-field">
+            <span class="popup__form-input-title">Количество</span>
+            <input type="text" class="input-reset popup__form-input" placeholder="1 человек">
+          </div>
+          <button class="btn-reset btn-buy-tickets btn-popup-form">Купить билеты</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </main>
+  <script src="/js/vendor.js"></script>
+  <script>
+    var dateIn = new Datepicker('#dateIn');
+    var dateOut = new Datepicker('#dateOut');
+  </script>
+  <script src="/js/scripts.js"></script>
+</body>
+</html>
